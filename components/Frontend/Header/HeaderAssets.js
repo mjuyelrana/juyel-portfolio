@@ -13,7 +13,7 @@ const HeaderAssets = () => {
             <script src="/assets/vendor/waypoints/noframework.waypoints.js"/>
 
             {/*Template Main JS File*/}
-            <script src="assets/js/main.js"/>
+            <script src="/assets/js/main.js"/>
         </>
     );
 };
