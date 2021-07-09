@@ -9,7 +9,7 @@ function MyApp({Component, pageProps}) {
                 <meta charSet="utf-8"/>
                 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-                <title>Md. Juyel Rana - A Full Stack Software Developer.</title>
+                <title>Md. Juyel Rana - A Full Stack Software Developer</title>
 
                 <meta name="keywords"
                       content="Md. Juyel Rana, A Full Stack Developer, React Js (Next Js, Redux, Flux, Material UI, React-bootstrap), Vue Js(Nuxt Js, Vuex), PHP (Laravel, Codeigniter), Node Js (Express Js), Native (Java, Android, Swift), Cross Platform (React Native, Ionic), MySQL, MongoDB, Firebase"/>
