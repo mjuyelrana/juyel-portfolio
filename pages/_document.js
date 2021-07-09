@@ -10,6 +10,7 @@ class MyDocument extends Document {
                 <Main/>
                 <NextScript/>
                 <HeaderAssets/>
+
                 </body>
             </Html>
         )
