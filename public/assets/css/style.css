@@ -114,14 +114,14 @@ h1, h2, h3, h4, h5, h6 {
     #header h1 {
         padding: 5px;
         border-radius: 10px;
-        background-color: #162e5f;
+        background-color: #162e5faa;
         font-size: 36px;
     }
 
     #header h2 {
         padding: 5px;
         border-radius: 10px;
-        background-color: #162e5f;
+        background-color: #162e5faa;
         font-size: 20px;
         line-height: 30px;
     }
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     #header .social-links {
         padding: 5px;
         border-radius: 10px;
-        background-color: #162e5f;
+        background-color: #162e5faa;
         margin-top: -10px;
     }
 
