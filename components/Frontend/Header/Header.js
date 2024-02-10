@@ -1,6 +1,7 @@
 import React from 'react';
+import {socialLinks} from "../../../constants/dummy";
 
-const Header = () => {
+const Header = ({baseUrl}) => {
     return (
         <>
             {/*Start Header*/}
@@ -8,10 +9,10 @@ const Header = () => {
                 <div className="container">
 
                     <h1>
-                        <a href="https://juyelrana.com/">Md. Juyel Rana</a>
+                        <a href={baseUrl}>Md. Juyel Rana</a>
                     </h1>
 
-                    <h2>A passionate <span>Full Stack Developer</span> from Dhaka, BD</h2>
+                    <h2>A passionate <span>Full Stack Developer</span> from Rajshahi, Bangladesh. Now working in Kyoto, Japan.</h2>
 
                     <nav id="navbar" className="navbar">
                         <ul>
@@ -28,53 +29,18 @@ const Header = () => {
                     {/*navbar*/}
 
                     <div className="social-links">
-
-                        <a
-                            title="Linkedin"
-                            href="https://www.linkedin.com/in/mohammad-juyel-rana-39b51a118/"
-                            target='_blank'
-                            className="linkedin" rel="noreferrer">
-                            <i className="bi bi-linkedin"/>
-                        </a>
-                        <a
-                            title="Email"
-                            href="mailto:contact@mjuyelrana.com"
-                            target='_blank'
-                            className="email"
-                            rel="noreferrer">
-                            <i className="bi bi-envelope"/>
-                        </a>
-                        <a
-                            title="Github"
-                            href="https://github.com/JuyelRana"
-                            className="github"
-                            target="_blank"
-                            rel="noreferrer">
-                            <i className="bi bi-github"/>
-                        </a>
-                        <a
-                            title="stack-overflow"
-                            href="https://stackoverflow.com/users/4043779/md-juyel-rana"
-                            className="stack-overflow"
-                            target="_blank"
-                            rel="noreferrer">
-                            <i className="bx bxl-stack-overflow"/>
-                        </a>
-                        <a
-                            title='Facebook'
-                            target='_blank'
-                            href="#"
-                            className="facebook">
-                            <i className="bi bi-facebook"/>
-                        </a>
-                        <a
-                            title='Skype'
-                            href="skype:juyel.rana30?text"
-                            className="skype"
-                            target="_blank"
-                            rel="noreferrer">
-                            <i className="bi bi-skype"/>
-                        </a>
+                        {
+                            socialLinks?.map(item => (
+                                <a
+                                    title={item.title}
+                                    href={item.url}
+                                    target={item.target}
+                                    className={item.anchorClass}
+                                    rel={item.rel} key={item.id}>
+                                    <i className={item.iClass}/>
+                                </a>
+                            ))
+                        }
                     </div>
 
                 </div>
