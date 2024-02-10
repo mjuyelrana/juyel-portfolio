@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import {coreTechs} from "../../../constants/dummy";
 
 const About = () => {
     return (
@@ -17,19 +18,21 @@ const About = () => {
                                 fontSize: '1rem',
                                 fontWeight: '500',
                                 lineHeight: '1.5',
-                                textTransform: 'none'
+                                textTransform: 'none',
+                                textAlign:'justify'
                             }}
-                            className="fst-italic">
-                            I like to build awesome software. For more than four years I am working on this
-                            developing sector. In this period I have developed many web and mobile applications
-                            using many environments and programming languages. I love my profession and I am always
-                            looking for the improvements and progressions in my career.
+                            className="card-subtitle">
+                            As a committed and seasoned software engineer, I bring over five years of valuable experience
+                            in managing and contributing to mid to large-scale, challenging projects. In the past two years,
+                            I have embraced the role of Team Lead, where I have successfully transformed client requirements
+                            into robust products. My expertise spans developing microservice architectures, mastering DevOps
+                            practices, and leveraging AWS services to enhance project outcomes. Passionate about continuous
+                            learning, I am always eager to acquire new skills and apply them innovatively in my work.
                         </p>
                     </div>
 
                     <div className="row">
                         <div className="col-lg-4" data-aos="fade-right">
-
                             <Image
                                 loading='eager'
                                 width={450}
@@ -40,63 +43,27 @@ const About = () => {
 
                         </div>
                         <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                            <h3>My Core Tech:</h3>
+                            <h3>My Core Technologies:</h3>
 
                             <div className="row">
                                 <div className="col-lg-12">
                                     <ul>
-                                        <li>
-                                            <i className="bi bi-chevron-right"/>
-                                            <strong>Frontend:</strong>
-                                            <span>
-                                                React Js (Next Js, Redux, Flux, Material UI, React-bootstrap), Vue Js(Nuxt Js, Vuex).
-                                            </span>
-                                        </li>
-
-                                        <li><i className="bi bi-chevron-right"/> <strong>Backend:</strong>
-                                            <span>
-                                                PHP (Laravel, Codeigniter), Node Js (Express Js).
-                                            </span>
-                                        </li>
-
-                                        <li><i className="bi bi-chevron-right"/> <strong>Apps Development:</strong>
-                                            <span>
-                                                Native (Java, Android, Swift), Cross Platform (React Native, Ionic).
-                                            </span>
-                                        </li>
-
-                                        <li><i className="bi bi-chevron-right"/> <strong>Api Development:</strong>
-                                            <span>
-                                                Rest Api (Laravel), GraphQL.
-                                            </span>
-                                        </li>
-
-                                        <li><i className="bi bi-chevron-right"/> <strong>Database:</strong>
-                                            <span>
-                                                MySQL, MongoDB, Firebase.
-                                            </span>
-                                        </li>
-
-                                        <li><i className="bi bi-chevron-right"/> <strong>DevOps:</strong>
-                                            <span>
-                                                Digital Ocean,AWS, Cloud, Linux (Apache, Mysql Server), Docker, Kubernetes, Jenkins.
-                                            </span>
-                                        </li>
-                                        <li><i className="bi bi-chevron-right"/> <strong>Scrum Agile
-                                            Methodology:</strong>
-                                            <span>
-                                                Git, Bitbucket, Github, Gitlab, Trello, Jira, ClickUp.
-                                            </span>
-                                        </li>
-
+                                        {coreTechs?.map(item=>(
+                                            <li key={item.id}>
+                                                 <p style={{
+                                                     fontSize: '1rem',
+                                                     fontWeight: '500',
+                                                     lineHeight: '1.5',
+                                                     textTransform: 'none',
+                                                     textAlign:'justify'
+                                                 }}>
+                                                     {item.id}. <strong>{item.title}:</strong>{item.techs}
+                                                 </p>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
-                            <p>
-                                Very passionate about learning new technologies, breaking down complex problems, and
-                                learning from other developers and I always keep myself updated with the latest
-                                platforms, frameworks, libraries, and technologies.
-                            </p>
                         </div>
                     </div>
 

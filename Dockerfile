@@ -1,15 +1,15 @@
-FROM node:16-alpine3.16
+FROM node:18-alpine as development
 
-WORKDIR /app
+WORKDIR /var/www/html
 
-RUN npm i -g npm 
+ENV NODE_OPTIONS=--openssl-legacy-provider
 
 COPY package*.json ./ 
 
-RUN npm install 
+RUN npm install --legacy-peer-deps
 
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "run", "prod"]
+#CMD ["npm", "run", "prod"]

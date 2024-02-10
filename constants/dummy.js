@@ -147,3 +147,98 @@ export const portfolios = [
         type: 'web'
     },
 ];
+
+export const socialLinks = [
+    {
+        id: 1,
+        title: 'Linkedin',
+        url: 'https://www.linkedin.com/in/md-juyel-rana-77299a299/',
+        target: '_blank',
+        anchorClass: 'linkedin',
+        rel: 'noreferrer',
+        iClass: 'bi bi-linkedin'
+    },
+    {
+        id: 2,
+        title: 'Email',
+        url: 'mailto:mjuyelrana@gmail.com',
+        target: '_blank',
+        anchorClass: 'email',
+        rel: 'noreferrer',
+        iClass: 'bi bi-envelope'
+    },
+    {
+        id: 3,
+        title: 'Github',
+        url: 'https://github.com/JuyelRana',
+        target: 'github',
+        anchorClass: '_blank',
+        rel: 'noreferrer',
+        iClass: 'bi bi-github'
+    },
+    {
+        id: 4,
+        title: 'stack-overflow',
+        url: 'https://stackoverflow.com/users/4043779/md-juyel-rana',
+        target: 'stack-overflow',
+        anchorClass: '_blank',
+        rel: 'noreferrer',
+        iClass: 'bx bxl-stack-overflow'
+    },
+    {
+        id: 5,
+        title: 'Facebook',
+        url: 'https://www.facebook.com/mjuyelrana/',
+        target: '_blank',
+        anchorClass: 'facebook',
+        rel: 'noreferrer',
+        iClass: 'bi bi-facebook'
+    },
+    {
+        id: 6,
+        title: 'Skype',
+        url: 'skype:juyel.rana30?text',
+        target: 'skype',
+        anchorClass: '_blank',
+        rel: 'noreferrer',
+        iClass: 'bi bi-skype'
+    }
+];
+
+export const coreTechs = [
+    {
+        id: 1,
+        title: 'Backend Development',
+        techs: 'PHP with Laravel, Node.js including NestJS and Express.js'
+    },
+    {
+        id: 2,
+        title: 'Frontend Development',
+        techs: 'ReactJS & NextJS, HTML, CSS, JavaScript, JQuery'
+    },
+    {
+        id: 3,
+        title: 'AWS-Services',
+        techs: 'Relational Database Service (RDS), Simple Storage Service (S3), Elastic Compute Cloud (EC2), Elastic Container Registry (ECR), Elastic Container Service (ECS), Simple Email Service (SES), Simple Notification Service (SNS), AWS CodeCommit'
+    },
+    {
+        id: 4,
+        title: 'Database Management',
+        techs: 'MySQL, MongoDB, Microsoft SQL Server (MSSQL)'
+    },
+    {
+        id: 5,
+        title: 'Mobile App Development',
+        techs: 'Android Development using Java, Cross-platform development with React Native'
+    },
+    {
+        id: 6,
+        title: 'Agile and Scrum Tools',
+        techs: 'Project management with GitHub Projects, Trello, Jira, and ClickUp'
+    },
+    {
+        id: 7,
+        title: 'DevOps Practices',
+        techs: 'Continuous Integration and Continuous Deployment (CI/CD) with GitHub CodeCommit, Deployment to AWS EC2 and ECS Fargate, Server configuration management, Containerization with Docker and orchestration with Kubernetes, Deployment and management of microservices'
+    }
+]

@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build:
+      context: .
+      target: development
+      dockerfile: Dockerfile
+    image: mjuyelrana/portfolio
+    platform: linux/amd64
+    container_name: juyel_portfolio
+    restart: unless-stopped
+    ports:
+      - ${APP_PORT}:${EXPOSE_APP_PORT}
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/node_modules
+    command: 'npm run dev'
+    tty: true
+    env_file: .env
+    networks:
+      - mjuyelrana
+networks:
+  mjuyelrana:
+    name: mjuyelrana
+    driver: bridge

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({baseUrl}) => {
     return (
         <>
             <div className="credits">
-                Designed & Developed by <a href="https://juyelrana.com/">Md Juyel Rana</a>
+                Designed & Developed by <a href={baseUrl}>Md Juyel Rana</a>
             </div>
         </>
     );
