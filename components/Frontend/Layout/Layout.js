@@ -7,7 +7,7 @@ const Layout = ({children}) => {
     const [baseUrl, setBaseUrl] = useState('');
 
     useEffect(() => {
-        setBaseUrl(window.location.host);
+        setBaseUrl(window.location.href);
     }, [])
 
     return (

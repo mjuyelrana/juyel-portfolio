@@ -51,16 +51,16 @@ const Skills = () => {
                     </div>
 
                     <div className="row">
-                        <div className="col-lg-3 col-md-4">
-                            <div className="icon-box">
-                                <i className="ri-robot-line" style={{color: '#ffbb2c'}}/>
-                                <h3>Machine Learning</h3>
-                            </div>
-                        </div>
                         <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                             <div className="icon-box">
                                 <i className="ri-robot-fill" style={{color: '#5578ff'}}/>
                                 <h3>Artificial Intelligence</h3>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4">
+                            <div className="icon-box">
+                                <i className="ri-robot-line" style={{color: '#ffbb2c'}}/>
+                                <h3>Machine Learning</h3>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
