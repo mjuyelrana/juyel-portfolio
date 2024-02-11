@@ -242,3 +242,90 @@ export const coreTechs = [
         techs: 'Continuous Integration and Continuous Deployment (CI/CD) with GitHub CodeCommit, Deployment to AWS EC2 and ECS Fargate, Server configuration management, Containerization with Docker and orchestration with Kubernetes, Deployment and management of microservices'
     }
 ]
+
+export const skills = [
+    {
+        id: 1,
+        name: 'PHP with Laravel',
+        min: 0,
+        max: 100,
+        now: 95
+    },
+    {
+        id: 2,
+        name: 'Node.js with NestJS and Express.js',
+        min: 0,
+        max: 100,
+        now: 91
+    },
+    {
+        id: 3,
+        name: 'JavaScript',
+        min: 0,
+        max: 100,
+        now: 92
+    },
+    {
+        id: 4,
+        name: 'ReactJS, NextJS',
+        min: 0,
+        max: 100,
+        now: 93
+    },
+    {
+        id: 5,
+        name: 'Android with Java',
+        min: 0,
+        max: 100,
+        now: 85
+    },
+    {
+        id: 6,
+        name: 'HTML, CSS, JQuery',
+        min: 0,
+        max: 100,
+        now: 86
+    },
+    {
+        id: 7,
+        name: 'MySQL, MSSQL',
+        min: 0,
+        max: 100,
+        now: 79
+    },
+    {
+        id: 8,
+        name: 'MongoDB',
+        min: 0,
+        max: 100,
+        now: 69
+    },
+    {
+        id: 9,
+        name: 'Server (AWS, Digital Ocean)',
+        min: 0,
+        max: 100,
+        now: 87
+    },
+    {
+        id: 10,
+        name: 'Docker',
+        min: 0,
+        max: 100,
+        now: 89
+    },
+    {
+        id: 11,
+        name: 'Figma, Photoshop, Gravit Designer, Adobe XD',
+        min: 0,
+        max: 100,
+        now: 64
+    },
+    {
+        id: 12,
+        name: 'DevOps Practices',
+        min: 0,
+        max: 100,
+        now: 78
+    }
+]
