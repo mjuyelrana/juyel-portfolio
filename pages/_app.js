@@ -9,7 +9,7 @@ function MyApp({Component, pageProps}) {
                 <meta charSet="utf-8"/>
                 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-                <title>Md. Juyel Rana - A Full Stack Software Developer</title>
+                <title>Md. Juyel Rana - A Full Stack Software Engineer.</title>
 
                 <meta name="keywords"
                       content="Md. Juyel Rana, A Full Stack Developer, React Js (Next Js, Redux, Flux, Material UI, React-bootstrap), Vue Js(Nuxt Js, Vuex), PHP (Laravel, Codeigniter), Node Js (Express Js), Native (Java, Android, Swift), Cross Platform (React Native, Ionic), MySQL, MongoDB, Firebase"/>
@@ -19,7 +19,7 @@ function MyApp({Component, pageProps}) {
                       content="Md. Juyel Rana, A Full Stack Developer."/>
                 <meta name="author" content="Md. Juyel Rana"/>
                 <meta content='241110544128' property='fb:app_id'/>
-                <meta property="og:url" content="https://juyelrana.com/"/>
+                <meta property="og:url" content="https://mjuyelrana.com/"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:image" content="/assets/img/favicons/favicon-400x400.png"/>
                 <meta property="og:image:width" content="400"/>
